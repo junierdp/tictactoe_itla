@@ -8,7 +8,12 @@ char player = 'X';
 bool isAvailable(int row, int column)
 {
 	//TODO: Implement this code so that it tells the user whether or not he can play in the selected cell
-	return true;
+	if(board[row -1][column - 1] == '_'){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
 
 //Give initial values to the board matrix
